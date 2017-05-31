@@ -1,3 +1,6 @@
+#ignore all files from .idea folder
 .idea/
+#ignore all files from template folder
 template/
+#ignore all files in anyweare with file resolution .iml
 *.iml
