@@ -1,8 +1,8 @@
 #ignore all files from .idea folder
 .idea/
-#ignore all files from template folder
-template/
 #not ignore files "content", "logo", "slider"
+*.png
+*.psd
 !template/content.png
 !template/logo.png
 !template/slider.png
