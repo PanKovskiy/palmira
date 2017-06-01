@@ -2,5 +2,12 @@
 .idea/
 #ignore all files from template folder
 template/
+#not ignore files "content", "logo", "slider"
+!template/content.png
+!template/logo.png
+!template/slider.png
 #ignore all files in anyweare with file resolution .iml
 *.iml
+!template/content.png
+!template/logo.png
+!template/slider.png

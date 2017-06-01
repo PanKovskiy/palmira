@@ -1,20 +1,34 @@
-* {
-    border: 1px solid blue;
-    /*padding: 5px;*/
-}
+ /** {*/
+    /*border: 1px solid blue;*/
+    /*!*padding: 5px;*!*/
+/*}*/
 
 body {
+    margin: 0 auto;
     color: #4f4f4f;
 }
 
-.header {
+ h3 {
+     margin: 0;
+ }
+ 
+ a {
+     text-decoration: none;
+     color: white;
+ }
+
+ ul {
+     display: flex;
+     align-items: baseline;
+     list-style-type: none;
+     padding-left: 0;
+     margin: 0;
+ }
+
+ .header {
     display: flex;
     justify-content: center;
     height: 80px;
-}
-
-p, h3 {
-    margin: 0;
 }
 
 .logo {
@@ -35,6 +49,10 @@ p, h3 {
 }
 
 .title1 p {
+    margin: 0;
+}
+
+.title1 p {
    font-size: 16px;
 }
 
@@ -50,19 +68,82 @@ p, h3 {
     font-style: italic;
 }
 
-.footer {
-    height: 80px;
+.navigation {
+    justify-content: center;
+    align-items: center;
+    background-color: #71a00c;
+}
+
+.navigation li {
+    margin: 0;
+    padding: 16px 0;
+    border-left: 2px solid #ffffff;
+}
+
+.navigation li:last-child {
+    border-right: 2px solid #ffffff;
+}
+
+.navigation a {
+    margin: 0;
+    padding: 14px 30px 15px;
+    font-size: 16px;
+}
+
+.navigation a:hover {
+    color: #71a00c;
+    background: #ffffff;
 }
 
 .navigation {
-    height: 55px;
+    min-height: 50px;
 }
 
 .slider {
+    background-color: #c8cdd2;
+    justify-content:  flex-end;
     height: 576px;
 }
 
 .content {
+    justify-content: flex-end;
+    align-items: center;
+    background-image: url("../template/content.png");
     width: 1920px;
     height: 881px;
 }
+.description {
+    max-width: 600px;
+}
+.description h2 {
+    border-radius: 20px;
+    border: 2px solid #000000;
+    text-transform: uppercase;
+    color: #000000;
+    padding: 20px;
+}
+
+.description p {
+    font-size: 18px;
+    color: black;
+}
+
+ .footer {
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     background-color: #d1d1d1;
+     min-height: 60px;
+ }
+
+ .footer li {
+     margin: 10px 30px 5px 30px;
+     font-size: 14px;
+ }
+
+ .footer p {
+     color: #4f4f4f;
+     font-size: 12px;
+     font-weight: bold;
+     margin: 0;
+ }
