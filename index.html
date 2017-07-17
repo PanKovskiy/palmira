@@ -5,8 +5,11 @@
     <title>Пальмира лучший ресторан</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/grid.css">
+    <!--<script src="./js/jquery-3.2.1.min.js"></script-->
+    <!--<script src="./js/slider.js"></script>-->
 </head>
 <body>
+
     <div class="container">
         <div class="row header">
             <div class="col-1 logo">
@@ -32,7 +35,39 @@
             </ul>
         </div>
         <div class="row slider">
-            <img src="./template/slider.png">
+            <div class="exessivec">
+                <div class="mySlider fade">
+                    <div class="desc">
+                        <li>Кофе брейк</li>
+                        <li>в нашем ресторане</li>
+                        <li>c 9.00 до 10.00</li>
+                    </div>
+                    <img src="./template/slider1.png">
+                </div>
+                <div class="mySlider fade">
+                    <div class="desc">
+                        <li>Бизнес-ланч</li>
+                        <li>в нашем ресторане</li>
+                        <li>c 12.00 до 15.00</li>
+                    </div>
+                    <img src="./template/slider2.png">
+                </div>
+                <div class="mySlider fade">
+                    <div class="desc">
+                        <li>Рибные дни</li>
+                        <li>в нашем ресторане</li>
+                        <li>вторник/четверг</li>
+                    </div>
+                    <img src="./template/slider3.png">
+                </div>
+                <div class="circle left">
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                </div>
+                <div class="circle right">
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+
+            </div>
         </div>
         <div class="row content">
             <div class="col-6">
@@ -76,5 +111,8 @@
             </p>
         </div>
     </div>
+
+<script src="./js/slider.js">
+</script>
 </body>
 </html>

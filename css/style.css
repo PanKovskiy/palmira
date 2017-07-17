@@ -3,6 +3,10 @@
     /*!*padding: 5px;*!*/
 /*}*/
 
+.mySlider {
+    display: none;
+ }
+
 body {
     margin: 0 auto;
     color: #4f4f4f;
@@ -17,10 +21,13 @@ body {
      color: white;
  }
 
+ li {
+    list-style-type: none;
+ }
+
  ul {
      display: flex;
      align-items: baseline;
-     list-style-type: none;
      padding-left: 0;
      margin: 0;
  }
@@ -29,6 +36,7 @@ body {
     display: flex;
     justify-content: center;
     height: 80px;
+    /*border: 10px solid gray;*/
 }
 
 .logo {
@@ -72,6 +80,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #71a00c;
+    /*border: 10px solid fuchsia;*/
 }
 
 .navigation li {
@@ -101,16 +110,86 @@ body {
 
 .slider {
     background-color: #c8cdd2;
-    justify-content:  flex-end;
-    height: 576px;
+   /*border: 10px solid blue;*/
+
+}
+
+.exessivec {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    /*border: 10px solid red;*/
+}
+
+.mySlider img {
+   display: block;
+    float: right;
+    /*position: absolute;*/
+    /*float: right;*/
+    /*border: 10px solid violet;*/
+}
+
+.circle{
+    position: absolute;
+    top: 40%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.6s ease;
+    /*border: 1px solid green;*/
+}
+.right {
+    right: 50px;
+    /*border: 1px solid yellow;*/
+}
+
+.left {
+    left: 50px;
+}
+
+.circle:hover {
+    background-color: white;
+}
+
+.prev, .next {
+  height: 100%;  
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+  color: black;  
+  font-size: 36px;
+}
+
+.desc {
+    display: block;
+    position: absolute;
+    top: 35%;
+    left: 200px;
+}
+.desc li {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.desc li:first-child {
+    text-transform: uppercase;
+}
+
+.desc li:nth-child(odd) {
+    color: #71a00c;
 }
 
 .content {
     justify-content: flex-end;
     align-items: center;
-    background-image: url("../template/content.png");
-    width: 1920px;
-    height: 881px;
+    background:
+        url("../template/content.png") 0 50% no-repeat,
+        #f7f7f7;
+    background-size: contain;
+    width: 100%;
+    min-height: 881px;
+    /*border: 10px solid rebeccapurple;*/
 }
 .description {
     max-width: 600px;
@@ -134,16 +213,34 @@ body {
      align-items: center;
      background-color: #d1d1d1;
      min-height: 60px;
+     /*border: 10px solid orchid;*/
  }
 
  .footer li {
      margin: 10px 30px 5px 30px;
-     font-size: 14px;
+     font-size: 16px;
  }
 
  .footer p {
      color: #4f4f4f;
-     font-size: 12px;
+     font-size: 14px;
      font-weight: bold;
      margin: 0;
  }
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
