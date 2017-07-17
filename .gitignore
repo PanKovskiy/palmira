@@ -6,6 +6,9 @@
 !template/content.png
 !template/logo.png
 !template/slider.png
+!template/slider1.png
+!template/slider2.png
+!template/slider3.png
 #ignore all files in anyweare with file resolution .iml
 *.iml
 !template/content.png
